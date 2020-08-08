@@ -1,3 +1,6 @@
 body {
-    background-image: url("colors.jpg");
+    background-image: url("dark-clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightslategray;
 }
