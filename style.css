@@ -1,6 +1,10 @@
-body {
-    background-image: url("dark-clouds.jpg");
-    background-repeat: no-repeat;
+.bgimg {
+    background-position: center;
     background-size: cover;
-    background-color: lightslategray;
-}
+    background-image: url("technology.jpg");
+    min-height: 100%;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
