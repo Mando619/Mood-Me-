@@ -8,3 +8,10 @@
   .w3-bar .w3-button {
     padding: 16px;
   }
+
+  .bgimg2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("team.jpg");
+    min-height: 100%;
+  }
