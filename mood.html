@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src=".assets/script.js"></script>
 <header>
 
 <div class="w3-top">
@@ -31,9 +33,10 @@
     <div class="columns is-vcentered">
       <div class="column is-6">
         <p class="bd-notification is-primary">First column</p>
-         <figure class="image is-128x128">
-          <img src="https://bulma.io/images/placeholders/128x128.png">
-        </figure>
+        <button id="sad" genre="18" class="emotionButton">Sad</button>
+        <button id="happy" genre="35" class="emotionButton">happy</button>
+        <button id="excited" genre="12" class="emotionButton">Excited</button>
+        <button id="bored" genre="99" class="emotionButton">Bored</button>
       </div>
       <div class="column" style="display: none;">
         <p class="bd-notification is-primary">First with content.</p>
@@ -46,15 +49,18 @@
     <div class="columns is-vcentered">
       <div class="column is-6">
         <p class="bd-notification is-primary">Second column</p>
-         <figure class="image is-128x128">
-          <img src="https://bulma.io/images/placeholders/128x128.png">
-        </figure>
+        <iframe id="playlist"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         
       </div>
       <div class="column">
         <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
+        <iframe id = "trailers" width="450" height="283"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
       </div>
     </div>
   </div>
+</section>
+</body>
+
 
 
 
@@ -94,7 +100,7 @@
 
 <script>
 
-$(".emotionButton").on("click", function(event) {
+  $(".emotionButton").on("click", function(event) {
 
   let arrayIndex = Math.floor((Math.random() * 20));
 
@@ -132,7 +138,7 @@ $(".emotionButton").on("click", function(event) {
   "url": "https://api.themoviedb.org/3/discover/movie?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + genreCode,
   "method": "GET",
   "timeout": 0,
-};
+  };
 
   $.ajax(settings).done(function (response) {
     //console.log(response.results[arrayIndex].original_title);
@@ -158,19 +164,8 @@ $(".emotionButton").on("click", function(event) {
   let trailerShow = "https://www.youtube.com/embed/" + videoID;
   $("#trailers").attr("src", trailerShow);
   });
-  });
+  });``
 
-
-
-})
-
-
-
-</section>
-  </body>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-    </html>
+  })
+</script>
+</html>
