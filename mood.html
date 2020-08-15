@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="assets/script.js"></script> 
 </body>
 
 
@@ -21,33 +22,88 @@
       </div>
       </div>
 </div>  
-<button id="sad">Sad</button>
+<button id="sad" genre="18" class="emotionButton">Sad</button>
+<button id="happy" genre="35" class="emotionButton">happy</button>
+<button id="excited" genre="12" class="emotionButton">Excited</button>
+<button id="bored" genre="99" class="emotionButton">Bored</button>
 <iframe id="playlist"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<p id="movieTitle">This will be a movie title</p>
+<iframe id = "trailers" width="450" height="283"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
 
 
 
 <script>
-var settings = {
-  "url": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7qK8ma5wgG1?si=NlA7VeAXTTmcTS0oCT8cqw",
+
+$(".emotionButton").on("click", function(event) {
+
+  let arrayIndex = Math.floor((Math.random() * 20));
+
+
+
+  let emotion = event.target.id;
+
+  var settings = {
+    "url": "https://api.spotify.com/v1/search?type=playlist&q=" + emotion,
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+      "Authorization": "Bearer BQAyPmmI-D_fG2DJcnNatxgxMoQEyfkExgpvTZumZQQQHxMF2K6icgz8FSsiD_56Xl3NeILPRSpRz1PD9iXMz2-Rf11wnQb-uEMMI2sxIcHGQx0ic4aVYwF9GylE_YdMDuo2klYhyYAjP_FSV107lUIphHlKBG4VW_z43cnX8-3AyfEzSWIVoXvXHZmlV4L8sN9SWo0L-oudcR52DnMF611Jrlz3o7OiJJuSZGCF2zb3Z0NnKh2-Gcg4Tz2V1yxIRlyMMa1QhNBoXzot"
+    },
+  };
+
+  $.ajax(settings).done(function (response) {
+    //console.log(response.playlists.items);
+    //console.log(arrayIndex)
+    let playlist = response.playlists.items[arrayIndex];
+   // console.log(playlist.external_urls.spotify);
+    let iframeURL = playlist.external_urls.spotify.replace('https://open.spotify.com/', 'https://open.spotify.com/embed/');
+
+   // console.log(iframeURL)
+
+    $("#playlist").attr("src", iframeURL);
+
+  });
+
+  let genreCode = event.target.attributes[1].value;
+  //console.log(event)
+  //console.log(genreCode)
+
+  var settings = {
+  "url": "https://api.themoviedb.org/3/discover/movie?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + genreCode,
   "method": "GET",
   "timeout": 0,
-  "headers": {
-    "Authorization": "Bearer BQD-outpOdnWriG4EPdd60Xa001m2AGU5LvLocZQGkRedd76c6G8_cj2kUDMe6DCg29EH3JS4kvoEK_UaPMOM_YTd4ULJ193brhP0HlZwuZfoQQBR-Gbikf6NuCVIKrJDeszD126ad4v9xFxVzpYd-6_0YYhqtNVcS04VZ2Mj52aMNKeKzVMYhSi90LOt0IQ2fe2xkyXZnfSZC16h34Nl6ahhggKo77e8zK5xvLsjjQHaQI8mrOZDpOcOsJ5pQnm71KMijPyvtLDtXzp"
-  },
 };
 
-$.ajax(settings).done(function (response) {
-  console.log(response.external_urls.spotify);
-  let url = response.external_urls.spotify;
+  $.ajax(settings).done(function (response) {
+    //console.log(response.results[arrayIndex].original_title);
+    console.log(response.results[arrayIndex])
+    let movieTitle = response.results[arrayIndex].original_title;
+    $('#movieTitle').text(movieTitle);
 
-  let embedLink = url.replace('https://open.spotify.com/playlist/', 'https://open.spotify.com/embed/playlist/')
-  console.log(embedLink)
+    let movieID = response.results[arrayIndex].id;
 
-  $("#sad").on("click", function(){
-    console.log(response.external_urls.spotify)
-    $("#playlist").attr("src", embedLink);
-  })
-});
+    var settings = {
+  "url": "https://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US",
+  "method": "GET",
+  "timeout": 0,
+  };
+  
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+
+  let videoID = response.results[0].key;
+
+  console.log(videoID);
+
+  let trailerShow = "https://www.youtube.com/embed/" + videoID;
+  $("#trailers").attr("src", trailerShow);
+  });
+  });
+
+
+
+})
+
 
 
 </script>
