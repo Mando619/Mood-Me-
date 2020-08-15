@@ -71,7 +71,7 @@
 
 <script>
 
-$(".emotionButton").on("click", function(event) {
+  $(".emotionButton").on("click", function(event) {
 
   let arrayIndex = Math.floor((Math.random() * 20));
 
@@ -109,7 +109,7 @@ $(".emotionButton").on("click", function(event) {
   "url": "https://api.themoviedb.org/3/discover/movie?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + genreCode,
   "method": "GET",
   "timeout": 0,
-};
+  };
 
   $.ajax(settings).done(function (response) {
     //console.log(response.results[arrayIndex].original_title);
@@ -135,10 +135,8 @@ $(".emotionButton").on("click", function(event) {
   let trailerShow = "https://www.youtube.com/embed/" + videoID;
   $("#trailers").attr("src", trailerShow);
   });
-  });
+  });``
 
-
-
-})
-
+  })
 </script>
+</html>

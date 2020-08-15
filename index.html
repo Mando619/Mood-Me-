@@ -68,7 +68,7 @@ body, html {
     <span class="w3-large">Music can evoke emotion, help regain memories, stimulate new neural connections, and active attention. As in movies, cinema, Mirror Effect has been proven. We tend to mimic the emotions we wach on screen, creating a Mirror Efect.</span>
     <p><a href="mood.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Click me to find a musical match</a></p>
   </div> 
-  <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
 
 </header>
 
@@ -102,20 +102,6 @@ body, html {
 </div>
 
 <script>
-var settings = {
-  "url": "https://api.spotify.com/v1/search?q=happy&type=playlist",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Authorization": "Bearer BQA0Nct1EBJb2c3gD-f6D2kjaNtp_3wdDGGoFXB5h4URxsVBNN6CYxmWntP5-haBh9hjX5psoefE0hVbANLu91cz7E_uSgYb54mqmNgtoRUtc44imfLHCEOt_WQWdUz_6NcGMhuuB2YU6cZcyuL9EjgoBuMrunJtI-R3hHAU_G6dOLtoAUOlreMZLG0MlSGgcBoh2MyAZtvs0YWkLy3GH2Zslh0UaV-esMCEfrkTr9wwNGFwsfp8BOSq0Uq3CAA8z-lB29Mcb895wm2E"
-  },
-};
 
-$.ajax(settings).done(function (response) {
-  //console.log(response.playlists.items[3].description);
-  console.log(response);
-  //$('#titlePlaylist').text(response.playlists.items[3].description)
-  $('#titlePlaylist').text(response.playlists.items[3].external_urls.spotify)
-});
 </script>
 
