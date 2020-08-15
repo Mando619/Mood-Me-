@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <style>
-
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
@@ -17,19 +16,22 @@ body, html {
   line-height: 1.8;
 }
 
-
+/* Full height image header */
 .bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("space.jpg");
-    min-height: 100%;
-  }
-  
-  .w3-bar .w3-button {
-    padding: 16px;
-  }
+  background-position: center;
+ /* background-size: auto; */
+  background-image: url("space.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
 
-</style> 
+
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -63,48 +65,15 @@ body, html {
 <!-- Header with full-height image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-<<<<<<< HEAD
-    <span class="w3-jumbo w3-hide-small">Listen  or watch to your current mood. Choose a specific mood you are in, and let us do the rest.</span><br>
-=======
     <span id="titlePlaylist" class="w3-jumbo w3-hide-small">Listen to your mood. Choose a specific mood you are in, and let us do the rest.</span><br>
->>>>>>> 4347fed848c6b30f91f9f194ba05d7c4d9dacd39
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Music can evoke emotion, help regain memories, stimulate new neural connections, and active attention. As in movies, cinema, Mirror Effect has been proven. We tend to mimic the emotions we wach on screen, creating a Mirror Efect.</span>
+    <span class="w3-large">Music can evoke emotion, help regain memories, stimulate new neural connections, and active attention.</span>
     <p><a href="mood.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Click me to find a musical match</a></p>
   </div> 
   <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="500" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 </header>
 
-<<<<<<< HEAD
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE SITE</h3>
-  <p class="w3-center w3-large">Key features of this application</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-</div>
-=======
 <script>
 var settings = {
   "url": "https://api.spotify.com/v1/search?q=happy&type=playlist",
@@ -122,4 +91,3 @@ $.ajax(settings).done(function (response) {
   $('#titlePlaylist').text(response.playlists.items[3].external_urls.spotify)
 });
 </script>
->>>>>>> 4347fed848c6b30f91f9f194ba05d7c4d9dacd39
