@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src=".assets/script.js"></script>
 <header>
 
 <div class="w3-top">
@@ -24,6 +26,14 @@
     </header>
 
 <body> 
+<button id="sad" genre="18" class="emotionButton">Sad</button>
+<button id="happy" genre="35" class="emotionButton">happy</button>
+<button id="excited" genre="12" class="emotionButton">Excited</button>
+<button id="bored" genre="99" class="emotionButton">Bored</button>
+<iframe id="playlist"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<p id="movieTitle">This will be a movie title</p>
+<iframe id = "trailers" width="450" height="283"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+
   <section class="section">
 
   <div class="container">
@@ -55,6 +65,9 @@
       </div>
     </div>
   </div>
+</section>
+</body>
+
 
 <script>
 
@@ -128,13 +141,4 @@ $(".emotionButton").on("click", function(event) {
 
 })
 
-
-
-</section>
-  </body>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-    </html>
+</script>
