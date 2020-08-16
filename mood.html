@@ -33,11 +33,12 @@
     <div class="columns is-vcentered">
       <div class="column is-6">
         <p class="bd-notification is-primary">First column</p>
-        <button id="sad" genre="18" class="emotionButton"><img src="sad_mood.jpg" alt="sad_mood.jpg">Sad</button>
-        <button id="happy" genre="35" class="emotionButton"><img src="" alt="">happy</button>
-        <button id="excited" genre="12" class="emotionButton"><img src="" alt="">Excited</button>
-        <button id="bored" genre="99" class="emotionButton"><img src="" alt="">Bored</button>
-      </div>
+        <button id="sad" genre="18" class="emotionButton moodBtn"><img src="sad.jpg" alt="Sad">Sad</button>
+        <button id="happy" genre="35" class="emotionButton moodBtn"><img src="happy.jpg" alt="Happy">Happy</button>
+        <button id="excited" genre="12" class="emotionButton moodBtn"><img src="excited.jpg" alt="Excited">Excited</button>
+        <button id="bored" genre="99" class="emotionButton moodBtn"><img src="bored.jpg" alt="Bored">Bored</button>
+         
+        </div>
       <div class="column" style="display: none;">
         <p class="bd-notification is-primary">First with content.</p>
       </div>
@@ -95,7 +96,22 @@
     </div>
   </div>
 
+<style>
+.moodBtn
+  {
+  font-size:100%;
+  height:15%;
+  width: 40%
+  }
+  
+.moodBtn img
+  {
+  height:100%%;
+  vertical-align:middle;
+  }
 
+  
+</style>
 
 
 <script>
@@ -103,8 +119,6 @@
   $(".emotionButton").on("click", function(event) {
 
   let arrayIndex = Math.floor((Math.random() * 20));
-
-
 
   let emotion = event.target.id;
 
