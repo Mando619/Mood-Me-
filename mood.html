@@ -3,13 +3,16 @@
 <title>Mood Me</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src=".assets/script.js"></script>
-<header>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/script.js"></script>
+
+<body>
+  <header>
 
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
@@ -25,46 +28,29 @@
 
     </header>
 
-<body> 
-  <section class="section">
-
-  <div class="container">
-
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <p class="bd-notification is-primary">First column</p>
+    <div class="columns column-gap .is-centered" style="margin-top: 100px; height: 700px;">
+      <div class="column">
         <button id="sad" genre="18" class="emotionButton">Sad</button>
         <button id="happy" genre="35" class="emotionButton">happy</button>
         <button id="excited" genre="12" class="emotionButton">Excited</button>
         <button id="bored" genre="99" class="emotionButton">Bored</button>
       </div>
-      <div class="column" style="display: none;">
-        <p class="bd-notification is-primary">First with content.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <p class="bd-notification is-primary">Second column</p>
-        <iframe id="playlist"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-         
-      </div>
       <div class="column">
-        <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
-        <iframe id = "trailers" width="450" height="283"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+        <iframe id="playlist"  width="430" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="column" style="padding-left: 0px; padding-right: 20px;">
+        <iframe id = "trailers" width="600" height="600"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
       </div>
     </div>
-  </div>
-</section>
-</body>
 
+
+</container>
+</body>
+</html>
 
 <script>
-
-  $(".emotionButton").on("click", function(event) {
+$(".emotionButton").on("click", function(event) {
+  console.log("hi")
 
   let arrayIndex = Math.floor((Math.random() * 20));
 
@@ -77,7 +63,7 @@
     "method": "GET",
     "timeout": 0,
     "headers": {
-      "Authorization": "Bearer BQAyPmmI-D_fG2DJcnNatxgxMoQEyfkExgpvTZumZQQQHxMF2K6icgz8FSsiD_56Xl3NeILPRSpRz1PD9iXMz2-Rf11wnQb-uEMMI2sxIcHGQx0ic4aVYwF9GylE_YdMDuo2klYhyYAjP_FSV107lUIphHlKBG4VW_z43cnX8-3AyfEzSWIVoXvXHZmlV4L8sN9SWo0L-oudcR52DnMF611Jrlz3o7OiJJuSZGCF2zb3Z0NnKh2-Gcg4Tz2V1yxIRlyMMa1QhNBoXzot"
+      "Authorization": "Bearer BQAUmTf_9A_DJqhF7bCvxYw53010_d4HRmQQmUpaO_6IPxEalEwAYIZZ6FIIyl3dzHhFp3rVUpVvIEdLqiGZHh_PVlPW3-MeTkVjZgwEOZ5dk-LUtfoIfT0aUHJDc6ujjhSLTNIpczEUSrBV5cnFtygGxDdXen4nVOP1o5K9EucUMfqrcXpA6f3Z2o3StXn0lnNu5mNTXV04WrGUA1DI0TbPzkuJuGDNUUIve8XpbhmrQcoSruyNGXFA-lXoVLLu9QNojwRRwCE4zwwj"
     },
   };
 
@@ -132,4 +118,3 @@
 
   })
 </script>
-</html>

@@ -1,30 +1,68 @@
-$("#search").on("click", function(){
-    console.log("ola");
-});
+$(".emotionButton").on("click", function(event) {
+  console.log("hi")
+
+  let arrayIndex = Math.floor((Math.random() * 20));
 
 
 
+  let emotion = event.target.id;
 
+  var settings = {
+    "url": "https://api.spotify.com/v1/search?type=playlist&q=" + emotion,
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+      "Authorization": "Bearer BQCMEfXtEJaaC8xbX9mEReEqE566URtsaUOGwkEAZeCosD9RDXfjiBK47DieN6sSSn7Ni5RAIiB22RWAdpvRe9NlOuLW0xb1IjBaXFuOqHDuZE_843rdE4BD-ruBJZh4JuZS8Wb2iggbN3iHnzxRWZ-GHFnsfe3901ITolxSRt4kuH-tk_ym0xolQ-F-M-HDf72KN60VsZCn-ml4upHL_Pw2QjRK875mBZshClGdv_qFkZEZ99jAYM5RlzMxhZDgbbrtDvbQ8IdGseca"
+    },
+  };
 
+  $.ajax(settings).done(function (response) {
+    //console.log(response.playlists.items);
+    //console.log(arrayIndex)
+    let playlist = response.playlists.items[arrayIndex];
+   // console.log(playlist.external_urls.spotify);
+    let iframeURL = playlist.external_urls.spotify.replace('https://open.spotify.com/', 'https://open.spotify.com/embed/');
 
-var settings = {
-  "url": "https://api.spotify.com/v1/playlists/37i9dQZF1DX7qK8ma5wgG1?si=NlA7VeAXTTmcTS0oCT8cqw",
+   // console.log(iframeURL)
+
+    $("#playlist").attr("src", iframeURL);
+
+  });
+
+  let genreCode = event.target.attributes[1].value;
+  //console.log(event)
+  //console.log(genreCode)
+
+  var settings = {
+  "url": "https://api.themoviedb.org/3/discover/movie?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + genreCode,
   "method": "GET",
   "timeout": 0,
-  "headers": {
-    "Authorization": "Bearer BQD-outpOdnWriG4EPdd60Xa001m2AGU5LvLocZQGkRedd76c6G8_cj2kUDMe6DCg29EH3JS4kvoEK_UaPMOM_YTd4ULJ193brhP0HlZwuZfoQQBR-Gbikf6NuCVIKrJDeszD126ad4v9xFxVzpYd-6_0YYhqtNVcS04VZ2Mj52aMNKeKzVMYhSi90LOt0IQ2fe2xkyXZnfSZC16h34Nl6ahhggKo77e8zK5xvLsjjQHaQI8mrOZDpOcOsJ5pQnm71KMijPyvtLDtXzp"
-  },
-};
+  };
 
-$.ajax(settings).done(function (response) {
-  console.log(response.external_urls.spotify);
-  let url = response.external_urls.spotify;
+  $.ajax(settings).done(function (response) {
+    //console.log(response.results[arrayIndex].original_title);
+    console.log(response.results[arrayIndex])
+    let movieTitle = response.results[arrayIndex].original_title;
+    $('#movieTitle').text(movieTitle);
 
-  let embedLink = url.replace('https://open.spotify.com/playlist/', 'https://open.spotify.com/embed/playlist/')
-  console.log(embedLink)
+    let movieID = response.results[arrayIndex].id;
 
-  $("#sad").on("click", function(){
-    console.log(response.external_urls.spotify)
-    $("#playlist").attr("src", embedLink);
+    var settings = {
+  "url": "https://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US",
+  "method": "GET",
+  "timeout": 0,
+  };
+  
+  $.ajax(settings).done(function (response) {
+  console.log(response);
+
+  let videoID = response.results[0].key;
+
+  console.log(videoID);
+
+  let trailerShow = "https://www.youtube.com/embed/" + videoID;
+  $("#trailers").attr("src", trailerShow);
+  });
+  });``
+
   })
-});
