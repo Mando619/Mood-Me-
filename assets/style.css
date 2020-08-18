@@ -71,3 +71,15 @@ img, embed, iframe, object, video {
 }
 
 
+.styledSad:hover {
+  background-color: #4DA6FF;
+}
+.styledHappy:hover {
+  background-color: #47D147;
+}
+.styledBored:hover {
+  background-color: #FFCCFF;
+}
+.styledExcited:hover {
+  background-color: #77B300;
+}
