@@ -1,4 +1,15 @@
 
+
+
+body {font-family: "Raleway", sans-serif
+}
+
+/*body, html {
+  height: 100%;
+  line-height: 1.8;
+}*/
+
+
 #title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -17,24 +28,23 @@
   background-color: whitesmoke;
   margin: 0 auto;
 }
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("technology.jpg");
-    min-height: 100%;
-  }
-  
+
   .w3-bar .w3-button {
     padding: 16px;
   }
 
   .bgimg2 {
-    background-position: center;
-    background-size: cover;
-    background-image: url("team.jpg");
-    min-height: 100%;
+    background-image: url("./assets/images/team.jpg");
+    min-height: 75%;
   }
+
   
+
+  .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
   .buttons, .display-playlist, .display-movie {
@@ -47,7 +57,7 @@
   display: block;
   position:static;
 }
-
+/* styling for the buttons. */
 .emotionButton {
   border: 1px black;
   width: 100%;
@@ -55,6 +65,9 @@
   height: 117px;
   margin-left: 10px;
   font-family: "Raleway", sans-serif;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
   
 }
 
@@ -71,7 +84,7 @@ img, embed, iframe, object, video {
   max-width: 600px !important;
 }
 
-
+/* colors for hover. Colors are coordinated by mood. */
 .styledSad:hover {
   background-color: #4DA6FF;
 }

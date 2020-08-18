@@ -16,12 +16,12 @@ function w3_close() {
 }
 
 
-
+// search button function
 $("#search").on("click", function(){
     console.log("ola");
 });
 
-
+// on click function for generating a music playlist.
 $(".emotionButton").on("click", function(event) {
   console.log("hi")
 
@@ -55,6 +55,7 @@ $(".emotionButton").on("click", function(event) {
   //console.log(event)
   //console.log(genreCode)
 
+  // ajax call for the movie database. 
   var settings = {
   "url": "https://api.themoviedb.org/3/discover/movie?api_key=7145a0d33a1aba5125e1cf5e53f5b9d1&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + genreCode,
   "method": "GET",
