@@ -25,15 +25,21 @@
       </div>
       </div>
 </div>  
+</header>
 
-    </header>
+    <div class="columns .is-centered" id="title" style="margin-top: 40px; height:60px;margin-left: 30px;">
+      <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;">How are you feeling today? </p>
+    </div>
+    <div class="columns .is-centered" id="title2" style="margin-top: 0px; height:30px;margin-left: 30px;">
+      <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;"> Choose your current MOOD to get a playlist and a movie to keep you going.</p>
+    </div>
 
-    <div class="columns column-gap .is-centered" style="margin-top: 100px; height: 700px;">
+    <div class="columns column-gap .is-centered" style="margin-top: 20px; height: 700px;">
       <div class="column">
-        <button id="sad" genre="18" class="emotionButton">Sad</button>
-        <button id="happy" genre="35" class="emotionButton">happy</button>
-        <button id="excited" genre="12" class="emotionButton">Excited</button>
-        <button id="bored" genre="99" class="emotionButton">Bored</button>
+        <button id="sad" genre="18" class="emotionButton button is-rounded is-light" style="height: 117px; font-size: 30px; border: 1px solid #99ccff;">SAD</button>
+        <button id="happy" genre="35" class="emotionButton button is-rounded is-light" style="height: 117px; font-size: 30px;border: 1px solid #99ccff;">HAPPY</button>
+        <button id="excited" genre="12" class="emotionButton button is-rounded is-light" style="height: 117px; font-size: 30px;border: 1px solid #99ccff;">EXCITED</button>
+        <button id="bored" genre="99" class="emotionButton button is-rounded is-light" style="height: 117px; font-size: 30px;border: 1px solid #99ccff;">BORED</button>
       </div>
       <div class="column">
         <iframe id="playlist"  width="430" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -42,9 +48,14 @@
         <iframe id = "trailers" width="600" height="600"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
       </div>
     </div>
-
-
-</container>
+    <style>
+      body {
+        background-position: center;
+       background-size: cover;
+       background-image: url("images/universe.jpg");
+       min-height: 100%;
+      }
+      </style>
 </body>
 </html>
 
@@ -63,7 +74,7 @@ $(".emotionButton").on("click", function(event) {
     "method": "GET",
     "timeout": 0,
     "headers": {
-      "Authorization": "Bearer BQAUmTf_9A_DJqhF7bCvxYw53010_d4HRmQQmUpaO_6IPxEalEwAYIZZ6FIIyl3dzHhFp3rVUpVvIEdLqiGZHh_PVlPW3-MeTkVjZgwEOZ5dk-LUtfoIfT0aUHJDc6ujjhSLTNIpczEUSrBV5cnFtygGxDdXen4nVOP1o5K9EucUMfqrcXpA6f3Z2o3StXn0lnNu5mNTXV04WrGUA1DI0TbPzkuJuGDNUUIve8XpbhmrQcoSruyNGXFA-lXoVLLu9QNojwRRwCE4zwwj"
+      "Authorization": "Bearer BQCjgjxkR_NyftEDPReMgvlSD8jJYPRW1LglzXZAcPdC5GSxjXuuGllieJGOukrk1VDRu0vtqx_w21KJhsZWadvN_UuoFgh_Y3dkhYTYl_c2wkw6C975INB8HQ1Bu15g0ztfCKlAACzyV_RnM5HGe0myeDW1F9Jwqogzmn4yAClVJ_Uc1sZ-2LP9D9gR4YnOdczJkC4R0mRtjMdrSIyKl8yPAtbEKUb_18BMgVuZmNU8NJNGZiQ-XF8CV8JuD2hoUhY4vvoDPsPSi_er"
     },
   };
 
@@ -114,7 +125,7 @@ $(".emotionButton").on("click", function(event) {
   let trailerShow = "https://www.youtube.com/embed/" + videoID;
   $("#trailers").attr("src", trailerShow);
   });
-  });``
+  });
 
   })
 </script>
