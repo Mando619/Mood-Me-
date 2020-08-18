@@ -3,15 +3,18 @@
 <title>Mood Me</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src=".assets/script.js"></script>
-<header>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/script.js"></script>
 
-<div class="w3-top">
+<body>
+  <header>
+
+    <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-button w3-wide">Mood Me</a>
       <!-- Right-sided navbar links -->
@@ -21,102 +24,48 @@
         <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       </div>
       </div>
-</div>  
+    </div>  
+  </header>
 
-    </header>
+   <div class="columns .is-centered" id="title" style="margin-top: 40px; height:60px;margin-left: 30px;"> 
+    <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;padding-top: 15px;">
 
-<body> 
-  <section class="section">
-
-  <div class="container">
-
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <p class="bd-notification is-primary">First column</p>
-        <button id="sad" genre="18" class="emotionButton moodBtn"><img src="sad.jpg" alt="Sad">Sad</button>
-        <button id="happy" genre="35" class="emotionButton moodBtn"><img src="happy.jpg" alt="Happy">Happy</button>
-        <button id="excited" genre="12" class="emotionButton moodBtn"><img src="excited.jpg" alt="Excited">Excited</button>
-        <button id="bored" genre="99" class="emotionButton moodBtn"><img src="bored.jpg" alt="Bored">Bored</button>
-         
-        </div>
-      <div class="column" style="display: none;">
-        <p class="bd-notification is-primary">First with content.</p>
-      </div>
+      How are you feeling today? </p>
     </div>
-  </div>
+    <div class="columns .is-centered" id="title2" style="margin-top: 50px; height:30px;margin-left: 30px;">
+      <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;"> Choose your current MOOD to get a playlist and a movie to keep you going.</p>
+    </div>
 
-  <div class="container">
-
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <p class="bd-notification is-primary">Second column</p>
-        <iframe id="playlist"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-         
-      </div>
+    <div class="columns column-gap .is-centered" style="margin-top: 0px; height: 700px;">
       <div class="column">
-        <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
-        <iframe id = "trailers" width="450" height="283"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+        <button id="sad" genre="18" class="emotionButton button is-rounded is-light" style="height: 117px;width: 300px; font-size: 30px; border: 2px solid ;">SAD</button>
+        <button id="happy" genre="35" class="emotionButton button is-rounded is-light" style="height: 117px;width: 300px; font-size: 30px;border: 2px solid;">HAPPY</button>
+        <button id="excited" genre="12" class="emotionButton button is-rounded is-light" style="height: 117px;width: 300px; font-size: 30px;border: 2px solid ;">EXCITED</button>
+        <button id="bored" genre="99" class="emotionButton button is-rounded is-light" style="height: 117px;width: 300px; font-size: 30px;border: 2px solid ;">BORED</button>
+      </div>
+      <div class="column" style ="padding-left: 0px;">
+        <iframe id="playlist"  width="430" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="column" style="padding-left: 0px; padding-right: 20px;">
+        <iframe id = "trailers" width="600" height="600"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
       </div>
     </div>
-  </div>
-</section>
+
+
+    <style>
+      body {
+        background-position: center;
+       background-size: cover;
+       background-image: url("./assets/images/bgp.jpg");
+       min-height: 100%;
+      }
+      </style>
 </body>
-
-
-
-
-  <div class="container">
-
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <p class="bd-notification is-primary">Third column</p>
-         <figure class="image is-128x128">
-          <img src="https://bulma.io/images/placeholders/128x128.png">
-        </figure>
-      </div>
-      <div class="column">
-        <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container">
-
-    <div class="columns is-vcentered">
-      <div class="column is-6">
-        <p class="bd-notification is-primary">fourth column</p>
-         <figure class="image is-128x128">
-          <img src="https://bulma.io/images/placeholders/128x128.png">
-        </figure>
-      </div>
-      <div class="column">
-        <p class="bd-notification is-primary">Second column with more content. This is so you can see the vertical alignment.</p>
-      </div>
-    </div>
-  </div>
-
-<style>
-.moodBtn
-  {
-  font-size:100%;
-  height:15%;
-  width: 40%
-  }
-  
-.moodBtn img
-  {
-  height:100%%;
-  vertical-align:middle;
-  }
-
-  
-</style>
-
+</html>
 
 <script>
-
-  $(".emotionButton").on("click", function(event) {
+$(".emotionButton").on("click", function(event) {
+  console.log("hi")
 
   let arrayIndex = Math.floor((Math.random() * 20));
 
@@ -127,7 +76,7 @@
     "method": "GET",
     "timeout": 0,
     "headers": {
-      "Authorization": "Bearer BQAyPmmI-D_fG2DJcnNatxgxMoQEyfkExgpvTZumZQQQHxMF2K6icgz8FSsiD_56Xl3NeILPRSpRz1PD9iXMz2-Rf11wnQb-uEMMI2sxIcHGQx0ic4aVYwF9GylE_YdMDuo2klYhyYAjP_FSV107lUIphHlKBG4VW_z43cnX8-3AyfEzSWIVoXvXHZmlV4L8sN9SWo0L-oudcR52DnMF611Jrlz3o7OiJJuSZGCF2zb3Z0NnKh2-Gcg4Tz2V1yxIRlyMMa1QhNBoXzot"
+      "Authorization": "Bearer BQCjgjxkR_NyftEDPReMgvlSD8jJYPRW1LglzXZAcPdC5GSxjXuuGllieJGOukrk1VDRu0vtqx_w21KJhsZWadvN_UuoFgh_Y3dkhYTYl_c2wkw6C975INB8HQ1Bu15g0ztfCKlAACzyV_RnM5HGe0myeDW1F9Jwqogzmn4yAClVJ_Uc1sZ-2LP9D9gR4YnOdczJkC4R0mRtjMdrSIyKl8yPAtbEKUb_18BMgVuZmNU8NJNGZiQ-XF8CV8JuD2hoUhY4vvoDPsPSi_er"
     },
   };
 
@@ -178,8 +127,7 @@
   let trailerShow = "https://www.youtube.com/embed/" + videoID;
   $("#trailers").attr("src", trailerShow);
   });
-  });``
+  });
 
   })
 </script>
-</html>

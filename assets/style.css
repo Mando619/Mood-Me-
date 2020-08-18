@@ -1,6 +1,21 @@
+#title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#title2 {
+  font-size: 30px;
+  color: white;
+}
 
-
-
+#textMood {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: gray;
+  background-color: whitesmoke;
+  margin: 0 auto;
+}
 .bgimg {
     background-position: center;
     background-size: cover;
@@ -20,5 +35,39 @@
   }
   
 
+
+  .buttons, .display-playlist, .display-movie {
+  float: left;
+  margin-top: 100px;
+  }
+
+#sad {
+  clear: both;
+  display: block;
+  position:static;
+}
+
+.emotionButton {
+  border: 1px black;
+  width: 100%;
+  clear: both;
+  height: 117px;
+  margin-left: 10px;
+  font-family: "Raleway", sans-serif;
   
-  
+}
+
+#happy, #excited, #bored {
+  margin-top: 10px;
+}
+
+.buttonContainer {
+  margin-left: 10%;
+}
+
+img, embed, iframe, object, video {
+  height: 520px !important;
+  max-width: 600px !important;
+}
+
+
