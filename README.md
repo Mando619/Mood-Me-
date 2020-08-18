@@ -25,7 +25,10 @@ This project was created in the mindset of Moods. How certain things
 
  ![2020-08-17 (2)](https://user-images.githubusercontent.com/65925169/90453830-83e16080-e0a6-11ea-89ee-16b975814218.png)
 
-[Mood-Me-Website](https://mando619.github.io/Mood-Me-/).
+
+## Link to Site
+
+[Mood-Me-](https://mando619.github.io/Mood-Me-/).
 
 ## Technology Used
 
