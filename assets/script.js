@@ -34,7 +34,7 @@ $(".emotionButton").on("click", function(event) {
     "method": "GET",
     "timeout": 0,
     "headers": {
-      "Authorization": "Bearer BQBPa04mtFoPcz11Bbf3uqy7QtCnKUr5-6v_pHZ0hta-b9VoabHEoPHFNSUyv5Qusu3P7NCj4w-jvskmpkENCxx0_BMVnNasEc430srQ-mCZ2Vd5leyxTPEOEivvzUAcxujiY2Zq6wiUmMrwAOXZMOM4Wdb7TMSc4zJEu-w7UIYmHIDo-DFd97VqFaJwsEp6XwiBzu-PamuozE2LR6piB4GfsR9srOz3ekvrfgD9pwF1S__9Wz0OLddHGDJ9MQMc93zonE_YrjFPEg4t"
+      "Authorization": "Bearer BQCKHl_FqfvXujAW_7EpiY08I1Mgv5m6bnADOGxuBkFCLq2mGJztiUuBROncKJQAvnfmuBvPXEeAmNtPUmFhr6BPkDX-bmmTgOR8HdvgehVD3rx3J4gaJ3nzoTpx6cu-7pCDAt1FasDDObp1okR67ZWMOOvxIhwDdPSzRGKgLWEM7ncz9EoTCYUpte1KBcjL6dTWVHieyUw5HjLC7VRM1HpQbDR2vniTlxzJjGjkNWLRrOK-F5ZTVqrLtbLVpxWn5ve4Rzx-yTdegGtu"
     },
   };
 
