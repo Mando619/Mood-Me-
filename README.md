@@ -40,7 +40,11 @@ This project was created in the mindset of Moods. How certain things
 - W3.css
 - Bulma.css
 
+## Contributors 
 
+* @diogocandidos HTML/CSS/API/JavaScript
+* @mathbolson API/JavaScript
+* @mando619- HTML/CSS
 
 ## Copyright
 
