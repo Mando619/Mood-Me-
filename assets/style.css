@@ -1,14 +1,29 @@
+html {
+  box-sizing: border-box;
 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
 body {font-family: "Raleway", sans-serif
 }
 
+.container {
+  display: flex;
+
+}
 /*body, html {
   height: 100%;
   line-height: 1.8;
 }*/
 
+
+.w3-top {
+  max-width: 100%;
+}
 
 #title {
   font-family: "Raleway", sans-serif;
@@ -80,8 +95,8 @@ body {font-family: "Raleway", sans-serif
 }
 
 img, embed, iframe, object, video {
-  height: 520px !important;
-  max-width: 600px !important;
+  height: 600px;
+  max-width: 100%;
 }
 
 /* colors for hover. Colors are coordinated by mood. */
@@ -98,4 +113,14 @@ img, embed, iframe, object, video {
   background-color: #77B300;
 }
 
+footer {
+  height: 50px;
+    margin-top: auto;
+    padding: 20px 0;
+    clear: both;
+    color: #fff;
+    color: #ccc;
+    font-size: 15px;
+    text-align: center;
+}
 
