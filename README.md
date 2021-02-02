@@ -1,5 +1,6 @@
 ## Mood-Me
-an API based application catering towards users mood. 
+
+ API based application catering towards users mood. 
 
 ## Introduction
 
