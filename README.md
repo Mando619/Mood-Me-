@@ -6,7 +6,8 @@
 
 This project can be accessed from any browser on an internet-connected device.
 User friendly navigation. Using2 API calls that take in the users mood request, and projects
-a random music playlist or movie trailor. 
+a random music playlist or movi pull
+e trailor. 
 
 * Music playlist API https://www.spotify.com/us/
 * Movie trailor API https://www.themoviedb.org/
