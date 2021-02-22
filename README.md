@@ -5,8 +5,8 @@
 ## Introduction
 
 This project can be accessed from any browser on an internet-connected device.
-User friendly navigation, with 2 API calls that take the users mood request, and projects
-a random music playlist, or a movie trailor. 
+User friendly navigation. Using2 API calls that take in the users mood request, and projects
+a random music playlist or movie trailor. 
 
 * Music playlist API https://www.spotify.com/us/
 * Movie trailor API https://www.themoviedb.org/
@@ -15,7 +15,7 @@ a random music playlist, or a movie trailor.
 
 This project was created in the mindset of Moods. How certain things
  can effect the outcome, or help while in the current state. We 
- created a website to cater towards the persons certain mood. 
+ created a website to cater towards the persons mood when accessing the site.
  By clicking on their current state, a random play list or 
  movie trailer will appear. Studies have shown that music and movies play a big 
  roll in the brain activity effecting the feelings one is having. We hope that
@@ -31,7 +31,7 @@ This project was created in the mindset of Moods. How certain things
 
 [Mood-Me-](https://mando619.github.io/Mood-Me-/).
 
-## Technology Used
+## Technologies Used
 
 - JQuery
 - API
@@ -43,9 +43,9 @@ This project was created in the mindset of Moods. How certain things
 
 ## Contributors 
 
-* @diogocandidos HTML/CSS/API/JavaScript
-* @mathbolson API/JavaScript
-* @mando619- HTML/CSS
+* [Diogo Candidos](https://github.com/diogocandidos)- HTML/CSS/API/JavaScript
+* [Matheus Bolson](https://https://github.com/mathbolson)- API/JavaScript
+* [Mando Estrada](https://github.com/Mando619)- HTML/CSS
 
 ## Copyright
 
