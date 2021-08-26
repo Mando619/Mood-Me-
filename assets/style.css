@@ -1,3 +1,18 @@
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/space.jpg");
+  min-height: 100%;
+}
+
+
+
 html {
   box-sizing: border-box;
 
@@ -9,6 +24,10 @@ html {
 
 
 body {font-family: "Raleway", sans-serif
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
 }
 
 .container {
@@ -133,6 +152,10 @@ img, embed, iframe, object, video {
 }
 .styledExcited:hover {
   background-color: #77B300;
+}
+
+.idCards {
+width: 80%;
 }
 
 footer {

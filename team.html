@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>Mood Me</title>
@@ -9,9 +8,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./assets/style.css">
+
 <body>
 
-<div class="w3-top">
+  <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-button w3-wide">Mood Me</a>
       <!-- Right-sided navbar links -->
@@ -20,90 +20,99 @@
         <a href="mood.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> MOOD</a>
         <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       </div>
-       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-     <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
     </div>
-</div>  
-</div> 
- 
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="mood.html" onclick="w3_close()" class="w3-bar-item w3-button">MOOD</a>
+  </div>
+  </div>
 
-</nav>
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="mood.html" onclick="w3_close()" class="w3-bar-item w3-button">MOOD</a>
+
+  </nav>
 
 
 
-<!-- description area of the team and purpose of project-->
+  <!-- description area of the team and purpose of project-->
 
-<div class="w3-container w3-light-grey" style="padding:80px 16px">
+  <div class="w3-container w3-light-grey" style="padding:80px 16px">
     <div class="w3-row-padding">
       <div class="w3-col m6">
-        <h2> The team wanted to create a website that helps, embelishes peoples moods. As we are big music fans, we thought it would be
-          fun to create a page that links your current mood to a random music playlist, or movie trailor. 
+        <h2> The team wanted to create a website that helps, embelishes peoples moods. As we are big music fans, we
+          thought it would be
+          fun to create a page that links your current mood to a random music playlist, or movie trailor.
           <br>
           <br>
         </h2>
-        <h2>Using API calls for the response and color coordinated the buttons that match current mood. We hope you catch some groovy tunes, or an awesome flick!
-        </p></h2>
+        <h2>Using API calls for the response and color coordinated the buttons that match current mood. We hope you
+          catch some groovy tunes, or an awesome flick!
+          </p>
+        </h2>
       </div>
       <div class="w3-col m6">
-        <img class="bgimg2 w3-round-large" src="./assets/images/Team.jpg" alt="3 looking at space" width="700" height="394">
+        <img class="bgimg2 w3-round-large" src="./assets/images/Team.jpg" alt="3 looking at space" width="700"
+          height="394">
       </div>
     </div>
   </div>
-  
+
   <!-- Team Section with contact links and small bio -->
-  <div class="w3-container" style="padding:80px 16px" id="team">
+  <div class="w3-container id=" team">
     <h3 class="w3-center">THE TEAM</h3>
     <p class="w3-center w3-large">The collaborators for this project</p>
     <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img class ="img" src="./assets/images/team3.jpg" alt="photo of Diogo" style="width:75%">
+        <div class="w3-card idCards">
+          <img class="img" src="./assets/images/team3.jpg" alt="photo of Diogo">
           <div class="w3-container">
             <header class="w3-container w3-light-grey">
-            <h3>Diogo Candido</h3>
-          </header>
+              <h3>Diogo Candido</h3>
+            </header>
             <p class="w3-opacity">Web Developer</p>
-            <a href="mailto:diogocandido.s@gmail.com"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a>
+            <a href="mailto:diogocandido.s@gmail.com"><button class="w3-button w3-light-grey w3-block"><i
+                  class="fa fa-envelope"></i> Contact</button></a>
           </div>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img class="img" src="./assets/images/teame2.jpg" alt="photo of Mando" style="width:80%">
+        <div class="w3-card idCards">
+          <img class="img" src="./assets/images/teame2.jpg" alt="photo of Mando">
           <div class="w3-container">
             <header class="w3-container w3-light-grey">
-            <h3>Mando Estrada</h3>
-          </header>
+              <h3>Mando Estrada</h3>
+            </header>
             <p class="w3-opacity">Web Developer</p>
-            <a href="mailto:libryum33@hotmail.com"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a>
+            <a href="mailto:libryum33@hotmail.com"><button class="w3-button w3-light-grey w3-block"><i
+                  class="fa fa-envelope"></i> Contact</button></a>
           </div>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img class="img" src="./assets/images/team1.jpg" alt="photo of Matheus" style="width:80%">
+        <div class="w3-card idCards">
+          <img class="img" src="./assets/images/team1.jpg" alt="photo of Matheus">
           <div class="w3-container">
             <header class="w3-container w3-light-grey">
-            <h3>Matheus Bolson</h3>
-          </header>
+              <h3>Matheus Bolson</h3>
+            </header>
             <p class="w3-opacity">Web Developer</p>
-            <a href="mailto:mathbolson@gmail.com"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></a>
+            <a href="mailto:mathbolson@gmail.com"><button class="w3-button w3-light-grey w3-block"><i
+                  class="fa fa-envelope"></i> Contact</button></a>
           </div>
         </div>
       </div>
     </div>
   </div>
- 
-<footer class="w3-center w3-white w3-padding-12">
-  <p>&copy; Copyright 2020</p>
-  <!-- javaScript links here-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./assets/script.js"></script>
-    </body>
-  </html>
+
+  <footer class="w3-center w3-white w3-padding-12">
+    <p>&copy; Copyright 2020</p>
+    <!-- javaScript links here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
