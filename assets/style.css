@@ -73,21 +73,22 @@ body {font-family: "Raleway", sans-serif
   position:static;
 }
 /* styling for the buttons. */
-.emotionButton {
-  border: 1px black;
-  width: 100%;
+.button {
+  width: 70%;
   clear: both;
-  height: 117px;
+  height: 100px;
   margin-left: 10px;
   font-family: "Raleway", sans-serif;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 10px #888888;
+  border: 2px solid black;
+  font-size: 25px;
+  /* box-shadow: 5px 10px #888888; */
   
 }
 
-#happy, #excited, #bored {
-  margin-top: 10px;
+#happy, #excited, #bored, #sad {
+  margin-top: 30px;
 }
 
 .buttonContainer {
@@ -100,14 +101,35 @@ img, embed, iframe, object, video {
 }
 
 /* colors for hover. Colors are coordinated by mood. */
-.styledSad:hover {
+.styledSad {
+  border-color: #4DA6FF;
+  color: #4DA6FF;
+}
+
+ .styledSad:hover {
   background-color: #4DA6FF;
 }
-.styledHappy:hover {
-  background-color: #47D147;
+
+.styledHappy {
+  border-color: green;
+  color: green;
 }
+
+.styledHappy:hover {
+  background-color: green;
+}
+
+.styledBored {
+  border-color:#FFCCFF;
+}
+
 .styledBored:hover {
   background-color: #FFCCFF;
+}
+
+.styledExcited {
+  border-color: #77B300;
+  color:#77B300;
 }
 .styledExcited:hover {
   background-color: #77B300;

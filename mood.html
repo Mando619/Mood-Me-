@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <title>Mood Me</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
-  <link rel="stylesheet" href="./assets/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+<link rel="stylesheet" href="./assets/style.css">
 
-  <style>
-    body {
-      background-position: center;
-     background-size: cover;
-     background-image: url("./assets/images/MountainSpace.jpg");
-     min-height: 100%;
-    }
-    </style>
+<style>
+  body {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./assets/images/MountainSpace.jpg");
+    min-height: 100%;
+  }
+</style>
 
 <body>
 
-    <div class="w3-top">
+  <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-button w3-wide">Mood Me</a>
       <!-- Right-sided navbar links -->
@@ -29,51 +29,58 @@
         <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> MOOD</a>
         <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       </div>
-       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-     <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-      </div>
-    </div> 
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+    </div>
+  </div>
   </div>
 
   <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="mood.html" onclick="w3_close()" class="w3-bar-item w3-button">MOOD</a>
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="mood.html" onclick="w3_close()" class="w3-bar-item w3-button">MOOD</a>
 
-</nav>
+  </nav>
 
   <!--columns for the mood buttons and videos/playlists view.-->
-<section>
-   <div class="columns is-mobile .is-centered" id="title" style="margin-top: 40px; height:90px;margin-left: 30px;"> 
-    <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;padding-top: 15px;">
+  <section>
+    <div class="columns is-mobile .is-centered" id="title" style="margin-top: 40px; height:90px;margin-left: 30px;">
+      <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;padding-top: 15px;">
 
-      How are you feeling today? </p>
+        How are you feeling today? </p>
     </div>
     <div class="columns is-mobile .is-centered" id="title2" style="margin-top: 20px; height:30px;margin-left: 30px;">
-      <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;"> Choose your current MOOD to get a playlist and a movie to keep you going.</p>
+      <p style="text-align: center;margin: 0 auto;font-family:'Raleway',sans-serif;"> Choose your current MOOD to get a
+        playlist and a movie to keep you going.</p>
     </div>
 
     <div class="columns is-mobile column-gap .is-centered" style="margin-top: 50px; height: 700px;">
       <div class="column is-mobile">
-        <button id="sad" genre="18" class="emotionButton button styledSad" style="height: 117px;width: 300px; font-size: 30px; border: 2px solid; border-radius: 60px;"><i class="fa fa-play" aria-hidden="true"></i>SAD</button>
-        <button id="happy" genre="35" class="emotionButton button styledHappy" style="height: 117px;width: 300px; font-size: 30px;border: 2px solid; border-radius: 60px;"><i class="fa fa-play" aria-hidden="true"></i>HAPPY</button>
-        <button id="excited" genre="12" class="emotionButton button styledExcited" style="height: 117px;width: 300px; font-size: 30px;border: 2px solid; border-radius: 60px;"><i class="fa fa-play" aria-hidden="true"></i>EXCITED</button>
-        <button id="bored" genre="99" class="emotionButton button styledBored" style="height: 117px;width: 300px; font-size: 30px;border: 2px solid; border-radius: 60px;"><i class="fa fa-play" aria-hidden="true"></i>BORED</button>
+        <button id="sad" genre="18" class="button styledSad">
+          <i class="fa fa-play-circle-o" aria-hidden="true"></i>Sad</button>
+        <button id="happy" genre="35" class="button styledHappy">
+          <i class="fa fa-play-circle-o" aria-hidden="true"></i>Happy</button>
+        <button id="excited" genre="12" class="button styledExcited">
+          <i class="fa fa-play-circle-o" aria-hidden="true"></i>Excited</button>
+        <button id="bored" genre="99" class="button styledBored">
+          <i class="fa fa-play-circle-o" aria-hidden="true"></i>Bored</button>
       </div>
-      <div class="column is-mobile" style ="padding-left: 0px;">
-        <iframe id="playlist"  width="430" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <div class="column is-mobile" style="padding-left: 0px;">
+        <iframe id="playlist" width="430" height="380" frameborder="0" allowtransparency="true"
+          allow="encrypted-media"></iframe>
       </div>
       <div class="column is-mobile" style="padding-left: 0px; padding-right: 20px;">
-        <iframe id = "trailers" width="600" height="600"  frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+        <iframe id="trailers" width="600" height="600" frameborder="0" allowfullscreen wmode="Opaque"></iframe>
       </div>
     </div>
-</section>
-  
-<footer class="w3-center w3-white w3-padding-12">
-  <p>&copy; Copyright 2020</p>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="assets/script.js"></script>
+  </section>
+
+  <footer class="w3-center w3-white w3-padding-12">
+    <p>&copy; Copyright 2020</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
