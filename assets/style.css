@@ -1,17 +1,4 @@
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/assets/images/space.jpg");
-  min-height: 100%;
-}
-
-
 
 html {
   box-sizing: border-box;
@@ -26,19 +13,25 @@ html {
 body {font-family: "Raleway", sans-serif
 }
 
-.w3-bar .w3-button {
-  padding: 16px;
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/space.jpg");
+  min-height: 100%;
 }
+/* .w3-bar .w3-button {
+  padding: 16px;
+} */
+
+/* .buttonLinks {
+  padding: 16px;
+} */
 
 .container {
   display: flex;
 
 }
-/*body, html {
-  height: 100%;
-  line-height: 1.8;
-}*/
-
 
 .w3-top {
   max-width: 100%;
@@ -62,10 +55,6 @@ body {font-family: "Raleway", sans-serif
   background-color: whitesmoke;
   margin: 0 auto;
 }
-
-  .w3-bar .w3-button {
-    padding: 16px;
-  }
 
   /*.bgimg2 {
     background-image: url("./assets/images/team.jpg");
@@ -92,7 +81,7 @@ body {font-family: "Raleway", sans-serif
   position:static;
 }
 /* styling for the buttons. */
-.button {
+.emotionButton {
   width: 70%;
   clear: both;
   height: 100px;
@@ -168,4 +157,3 @@ footer {
     font-size: 15px;
     text-align: center;
 }
-
