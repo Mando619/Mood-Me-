@@ -13,21 +13,6 @@ html {
 body {font-family: "Raleway", sans-serif
 }
 
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("./images/space.jpg");
-  min-height: 100%;
-}
-/* .w3-bar .w3-button {
-  padding: 16px;
-} */
-
-/* .buttonLinks {
-  padding: 16px;
-} */
-
 .container {
   display: flex;
 
@@ -116,6 +101,7 @@ img, embed, iframe, object, video {
 
  .styledSad:hover {
   background-color: #4DA6FF;
+  color: black;
 }
 
 .styledHappy {
@@ -125,6 +111,7 @@ img, embed, iframe, object, video {
 
 .styledHappy:hover {
   background-color: green;
+  color:black;
 }
 
 .styledBored {
@@ -141,6 +128,7 @@ img, embed, iframe, object, video {
 }
 .styledExcited:hover {
   background-color: #77B300;
+  color: black;
 }
 
 .idCards {
